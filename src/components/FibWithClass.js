@@ -43,18 +43,20 @@ export default function FibWithClass() {
     <>
       <h1>Fibonacci Numbers!</h1>
       <main className="be-centered">
-        <button onClick={addFibArray}>Next number</button>
+        <h3>Watch out! A new number every second!</h3>
+        {/* <button onClick={addFibArray}>Next number</button> */}
         <p className="display">{current}</p>
         <button
           onClick={() => {
-            setTwoAgo(0)
-            setLastOne(0)
-            setCurrent(1)
+            setSeq([1, 1])
+            // setTwoAgo(0)
+            // setLastOne(0)
+            // setCurrent(1)
           }}
         >
           Reset
         </button>
-        <h3>{timer}</h3>
+        {/* <h3>{timer}</h3> */}
       </main>
     </>
   )
